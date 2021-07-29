@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <link rel = "icon" href ="./img/spotify.png" 
+            type = "image/x-icon">
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Font Awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-brand" data-aos="fade-right">
+                <i class="fab fa-spotify"></i> 
+                Spotify
+            </div>
+            <ul class="nav-items" data-aos="zoom-in">
+                <li class="nav-item">
+                    Home
+                </li>
+                <li class="nav-item">
+                    Favourites
+                </li>
+                <li class="nav-item">
+                    About
+                </li>
+                <li class="nav-item">
+                    Premium
+                </li>
+            </ul>
+
+            <div class="sign-up" data-aos="fade-left">
+                Sign up
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <div class="container" data-aos="fade-up">
+               <h1>Music For <span class="color-green">Everyone.</span></h1>
+               <h4>Millions of songs. No credit card needed.</h4>
+               <a href="#online-player"><button class="download btn-bg">GET SPOTIFY FREE</button></a>
+            </div>
+        </section>
+
+        <section class="about" id="online-player">
+            <div class="sidebar">
+                <div class="spotify-icon"><i class="fab fa-spotify"></i><h3>Spotify</h3></div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item" tabindex="0">
+                        <div class="nav-icon">
+                            <svg class="home-icon" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M 256.274 60.84 L 84.324 166.237 L 84.324 443.063 L 193.27 443.063 L 193.27 293.73 L 320.228 293.73 L 320.228 443.063 L 428.222 443.063 L 428.222 165.476 L 256.274 60.84 Z M 256.274 35.95 L 448.452 149.145 L 448.452 464.395 L 300 464.395 L 300 315.062 L 213.499 315.062 L 213.499 464.395 L 64.095 464.395 L 64.095 150.161 L 256.274 35.95 Z"></path></svg>
+                        </div> Home
+                    </li>
+                    <li class="sidebar-item" id="search-icon" tabindex="1">
+                        <div class="nav-icon">
+                            <svg class="search-icon" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill-rule="evenodd"></path></svg>
+                        </div> Search
+                    </li>
+                    <li class="sidebar-item" tabindex="2">
+                        <div class="nav-icon">
+                            <svg class="library-icon" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"></path></svg>
+                        </div> Your Library
+                    </li>
+                </ul>
+                <ul class="sidebar-nav create-playlist">
+                    <li class="sidebar-item" tabindex="3">
+                        <div class="nav-icon add-icon">
+                            <svg role="img" height="12" width="12" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 fIDrcz"><path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"></path><path fill="none" d="M0 0h16v16H0z"></path></svg>
+                        </div> Create Playlist
+                    </li>
+                    <li class="sidebar-item" tabindex="3">
+                        <div class="nav-icon like-icon">
+                            <svg role="img" height="12" width="12" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 fIDrcz"><path fill="none" d="M0 0h16v16H0z"></path><path d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z"></path></svg>
+                        </div> Liked Songs
+                    </li>
+                </ul>
+            </div>
+            <div class="content-container">
+                <header class="top-bar">
+                    <div class="arrow-container">
+                        <button class="back-arrow topbar-arrow">
+                            <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="Svg-ytk21e-0 fJEWJR _6fe5d5efc9b4a07d5c424071ac7cdacb-scss"><polyline points="16 4 7 12 16 20" fill="none" stroke="#fff"></polyline></svg>
+                        </button>
+                        <button class="forward-arrow topbar-arrow">
+                            <svg role="img" focusable="false" height="24" width="24" viewBox="0 0 24 24" class="Svg-ytk21e-0 fJEWJR _6fe5d5efc9b4a07d5c424071ac7cdacb-scss"><polyline points="8 4 17 12 8 20" fill="none" stroke="#b3b3b3"></polyline></svg>
+                        </button>
+                        <div class="search-form">
+                            <input type="text" placeholder="Artists, songs, or podcasts">
+                            <svg class="search-icon" viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill-rule="evenodd"></path></svg>
+                        </div>
+                    </div>
+                    <div class="login-signup">
+                        <div class="signup">
+                            <a href="#">SIGN UP</a>
+                        </div>
+                        <div class="login">
+                            <a href="#">LOG IN</a>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="genre-container">
+                    <h3>
+                        Browse all
+                    </h3>
+                    <div class="genres">
+                        <!-- <div class="genre-card">
+                            <h3>Podcasts</h3>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>PREVIEW OF SPOTIFY</p>
+                <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+            </div>
+            <button class="signup-free">
+                SIGN UP FREE
+            </button>
+        </footer>
+    </main>
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
